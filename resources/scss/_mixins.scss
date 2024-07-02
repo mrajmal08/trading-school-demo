@@ -1,0 +1,36 @@
+// Responsive break point
+@mixin max2Xl {
+  @media (max-width: #{$xxl}) {
+    @content;
+  }
+}
+@mixin maxXl {
+  @media (max-width: #{$xl}) {
+    @content;
+  }
+}
+@mixin maxLg {
+  @media (max-width: #{$lg}) {
+    @content;
+  }
+}
+@mixin maxMd {
+  @media (max-width: #{$md}) {
+    @content;
+  }
+}
+@mixin maxSm {
+  @media (max-width: #{$sm}) {
+    @content;
+  }
+}
+@mixin maxXs {
+  @media (max-width: #{$xs}) {
+    @content;
+  }
+}
+@mixin maxXxs {
+  @media (max-width: #{$xxs}) {
+    @content;
+  }
+}

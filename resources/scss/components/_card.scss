@@ -1,0 +1,65 @@
+.card-box {
+  background-color: $dark-secondary;
+  width: 100%;
+  .cardbox-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    .cardbox-title {
+      font-family: $sofiaProBold;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+    }
+    .header-filter {
+      list-style-type: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          text-transform: capitalize;
+          padding: 8px 16px;
+          text-decoration: none;
+          font-family: $sofiaProMedium;
+          font-size: 1rem;
+          border-radius: 50px;
+          color: $dark-th-color;
+          min-width: 52px;
+          height: 42px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &.active {
+          a {
+            background-color: $dark-filter-bg;
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+
+  @include maxXs {
+    .cardbox-header {
+      flex-direction: column;
+      margin-bottom: 1rem;
+      .cardbox-title {
+        font-size: 1rem;
+        margin-bottom: .7rem;
+      }
+      .header-filter {
+        gap: .5rem;
+        li {
+          a {
+            font-size: 0.8rem;
+            min-width: 45px;
+            height: 35px;
+            padding: 7px 10px;
+          }
+        }
+      }
+    }
+  }
+}

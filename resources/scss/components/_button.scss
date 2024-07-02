@@ -1,0 +1,112 @@
+.button {
+}
+
+.raw-btn {
+  font-family: "SofiaProMedium";
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 100px;
+  padding: 12px 14px;
+  min-width: 75px;
+  height: 35px;
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  white-space: nowrap;
+  &:hover {
+    color: $color-white;
+  }
+}
+.raw-back-btn {
+  width: 110px;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  height: 44px;
+}
+.matrix-btn {
+  background: rgb(0 0 0 / 40%);
+}
+.pay-now {
+  background: rgb(0 0 0 / 40%);
+}
+
+.edit-btn {
+  background: rgb(0 0 0 / 40%);
+  border: 1px solid rgb(0,0,0);
+}
+
+.delete-btn {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(1, 1, 1, 1);
+  // border: 1px solid rgba(240, 11, 22, 1);
+}
+
+.details-btn,
+.payment-details,
+.create-btn,
+.back-btn {
+  // background: rgba(64, 59, 236, 0.4);
+  background: rgba(0, 0, 0, 0.4);
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    // background-color: rgba(64, 59, 236, 0.5);
+  }
+}
+
+.btn-submit {
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  border-radius: 6px;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  padding: 0.8rem 15px;
+  font-size: 16px;
+  line-height: 20px;
+  height: 58px;
+  color: $color-white;
+}
+
+.btn-teacher-submit {
+  height: 40px;
+  line-height: 13px;
+}
+
+.payment-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  width: 100%;
+  height: 50px;
+  color: $color-white;
+  font-family: "SofiaProBold";
+  font-weight: 700;
+  font-size: 16px;
+  background: #000;
+  // background: #3734a9;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 6px;
+  border: 1px solid #3734a9;
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.filter-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  width: 100%;
+  height: 44px;
+  color: $color-white;
+  font-family: "SofiaProBold";
+  font-weight: 700;
+  font-size: 16px;
+  background: #000;
+  // background: #3734a9;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 6px;
+  border: 1px solid #3734a9;
+}

@@ -1,0 +1,101 @@
+// Font Family
+$sofiaFontPath: "../fonts/SofiaPro";
+$robotoFontPath: "../fonts/Roboto";
+$graphikFontPath: "../fonts/Graphik";
+$latoFontPath: "../fonts/Lato";
+
+@font-face {
+  font-family: "SofiaProBold";
+  src: url("#{$sofiaFontPath}/SofiaProBold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SofiaProMedium";
+  src: url("#{$sofiaFontPath}/SofiaProMedium.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url("#{$robotoFontPath}/Roboto-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("#{$robotoFontPath}/Roboto-Medium.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("#{$robotoFontPath}/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoLight";
+  src: url("#{$robotoFontPath}/Roboto-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("#{$graphikFontPath}/GraphikRegular.otf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoRegular";
+  src: url("#{$latoFontPath}/Lato-Regular.ttf");
+  font-style: normal;
+}
+
+$text-poppins: "Poppins", sans-serif;
+$text-montserrat: "Montserrat", sans-serif;
+
+// Roboto Fonts
+$roboto-bold: "RobotoBold";
+$roboto-medium: "RobotoMedium";
+$roboto-regular: "RobotoRegular";
+$roboto-light: "RobotoLight";
+
+// Sofia Pro Font
+$sofiaProBold: "SofiaProBold";
+$sofiaProMedium: "SofiaProMedium";
+
+// Graphik Font
+$graphik: "Graphik";
+
+// Lato Font
+$latoRegular: "latoRegular";
+
+//colors
+$color-white: #fff;
+$color-primary: #403bec;
+$dark-primary: #141518;
+$dark-secondary: #1e1f25;
+$color-placeholder: #8c8c8c;
+
+$dark-th-color: #5d6588;
+$dark-filter-bg: #141518;
+$color-text-secondary: #5d6588;
+$dark-input-bg: #1d1f25;
+//Gradient Color
+$primary-gradient: linear-gradient(90deg, #3274c4 0%, #4198ff 100%);
+
+//Responsive sizes
+$xxl: 1599px;
+$xl: 1399px;
+$lg: 1199px;
+$md: 991px;
+$sm: 768px;
+$xs: 575px;
+$xxs: 375px;

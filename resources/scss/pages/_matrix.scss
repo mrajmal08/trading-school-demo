@@ -1,0 +1,283 @@
+.matrix-wrapper {
+  header {
+    nav {
+      .page-title {
+        margin-bottom: 0px;
+        .back-btn {
+          background-color: transparent;
+          border: none;
+          box-shadow: none;
+          img {
+            margin-right: 1rem;
+            margin-top: -6px;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    .trade-details-card {
+      min-height: 351px;
+    }
+    .trading-day,
+    .account-balance,
+    .rule-risk {
+      min-height: 400px;
+    }
+    .matrix-details-card {
+      // padding: 33px 60px 33px 32px;
+      padding: 22px;
+      border-radius: 12px;
+      .trade_performance__text p {
+        color: #A5ADCF;
+        font-size: 0.9rem;
+        letter-spacing: 0.00938em;
+        line-height: 1rem;
+      }
+      .matrix-content {
+        display: flex;
+        justify-content: start;
+        gap: 12px;
+        height: 52px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #34384c;
+        margin-bottom: 1.5rem;
+        .card-sm {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
+          border-radius: 10px;
+          flex-shrink: 0;
+          &.card-red {
+            background-color: #ff4267;
+          }
+          &.card-blue {
+            background-color: #0890fe;
+          }
+          &.card-yellow {
+            background-color: #ff8564;
+          }
+        }
+        .reports {
+          span {
+            color: $dark-th-color;
+            font-size: 13px;
+            font-family: $graphik;
+          }
+          h5 {
+            font-family: $sofiaProBold;
+            font-size: 1rem;
+            color: $color-white;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .progress-card {
+      padding: 35px 76px 35px 90px;
+      border-radius: 12px;
+      svg.radial-progress {
+        height: auto;
+        max-width: 175px;
+        transform: rotate(-90deg);
+        width: 100%;
+      }
+
+      svg.radial-progress circle {
+        fill: rgba(0, 0, 0, 0);
+        stroke: #02a42f;
+        stroke-dashoffset: 219.91148575129;
+        stroke-width: 10;
+      }
+
+      svg.radial-progress circle.incomplete {
+        stroke: #34353b;
+        opacity: 1;
+      }
+
+      svg.radial-progress circle.complete {
+        stroke-dasharray: 219.91148575129;
+      }
+
+      svg.radial-progress text {
+        fill: #fff;
+        text-anchor: middle;
+        font-family: $sofiaProBold;
+        font-size: 1.2rem;
+      }
+      .winning-progress h5,
+      .losing-progress h5 {
+        font-family: $sofiaProBold;
+        font-size: 1.25rem;
+        margin-top: 1rem;
+      }
+    }
+
+    .chart-box {
+      .chart-legend {
+        list-style-type: none;
+        display: flex;
+        gap: 2rem;
+        padding: 0;
+        li {
+          label {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 0.6rem;
+            input[type="checkbox"] {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              appearance: none;
+            }
+            &.balance {
+              input[type="checkbox"] {
+                background-color: #f7931a;
+              }
+              color: #f7931a;
+            }
+            &.equity {
+              input[type="checkbox"] {
+                background-color: #403bec;
+              }
+              color: #403bec;
+            }
+            &.account_value {
+              input[type="checkbox"] {
+                background-color: #02A42F;
+              }
+              color: #02A42F;
+            }
+            &.disabled {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+
+    .matrix-table {
+      .tr-pagination {
+        list-style-type: none;
+        margin-top: 1rem;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        li {
+          padding-right: 0.3rem;
+          a {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            border-radius: 3px;
+            justify-content: center;
+            align-items: center;
+            font-family: $roboto-medium;
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            color: #64607d;
+            cursor: pointer;
+            &.disabled {
+              color: #d9d9d9;
+              font-size: 1rem;
+            }
+          }
+          &.active {
+            a {
+              color: #403bec;
+              border: 1px solid #403bec;
+            }
+          }
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .chart-tooltip {
+    padding: 1rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0;
+    li {
+      display: flex;
+      gap: 0.4rem;
+      margin: 0.5rem 0;
+      strong {
+        width: 100px;
+        color: $color-white;
+        text-transform: uppercase;
+      }
+      .rate {
+        width: 104px;
+        text-align: right;
+        color: #11cabe;
+        font-family: $graphik;
+        font-size: 14px;
+      }
+    }
+  }
+
+  @include maxLg {
+    .content {
+      .matrix-details-card {
+        padding: 47px 3rem 47px;
+        .matrix-content {
+          flex-direction: column;
+          height: auto;
+        }
+      }
+      .progress-card {
+        padding: 1rem 76px 1rem 90px;
+        svg.radial-progress {
+          max-width: 165px;
+        }
+        .space-bottom {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+
+  @include maxMd {
+    .content {
+      .matrix-details-card {
+        padding: 37px 60px 37px 32px;
+        .matrix-content {
+          flex-direction: row;
+        }
+      }
+      .progress-card {
+        .space-bottom {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  @include maxSm {
+    .content {
+      .matrix-details-card {
+        padding: 1.5rem;
+      }
+      .progress-card {
+        padding: 1.5rem;
+        .space-bottom {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}

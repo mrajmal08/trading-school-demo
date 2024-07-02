@@ -1,0 +1,129 @@
+.auth-wrapper {
+  background-color: $dark-primary;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  .card-box {
+    &.login-card {
+      max-width: 696px;
+      padding: 4.4rem 6.8rem 7.9rem;
+    }
+    &.register-card {
+      max-width: 696px;
+      padding: 2rem 4rem 2.625rem;
+    }
+  }
+  .logo-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    @include maxSm {
+      margin-bottom: 1rem;
+    }
+    .brand-name {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: $color-white;
+      font-size: 18px;
+      line-height: 21px;
+      font-family: $roboto-bold;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      .down {
+        margin-left: 15px;
+      }
+    }
+  }
+  .auth-page-title {
+    font-family: $roboto-light;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .auth-page-subtitle {
+    font-family: $roboto-light;
+    font-size: 14px;
+    color: #fff;
+  }
+  form {
+    margin-top: 0.25rem;
+    .input-control {
+      padding: 17px 12px;
+      background-color: $color-white;
+      font-family: $roboto-regular;
+      font-size: 16px;
+      line-height: 24px;
+      color: $dark-primary;
+      &::placeholder {
+        color: $color-placeholder;
+      }
+    }
+
+    .input-wrapper {
+      position: relative;
+      span {
+        position: absolute;
+        font-size: 1rem;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 11;
+        color: #000;
+      }
+    }
+
+    .forgot-pass {
+      color: #5d6588;
+      font-family: $roboto-regular;
+      font-size: 12px;
+      line-height: 22px;
+      text-decoration-line: underline;
+    }
+  }
+
+  @include maxSm {
+    .auth-page-subtitle {
+      margin-bottom: 0;
+    }
+
+    .card-box {
+      &.login-card,
+      &.register-card {
+        max-width: 510px;
+        padding: 2.5rem;
+      }
+    }
+    form {
+      margin-top: 0px;
+      .input-control {
+        padding: 12px 10px;
+      }
+      .btn-submit {
+        height: 50px;
+      }
+    }
+
+  }
+
+  @include maxXs {
+    padding: 1.5rem;
+    .card-box {
+      &.login-card,
+      &.register-card {
+        padding: 2rem;
+      }
+    }
+  }
+  @include maxXxs {
+    padding: 1rem;
+    .card-box {
+      &.login-card,
+      &.register-card {
+        padding: 1.3rem 1rem;
+      }
+    }
+  }
+}

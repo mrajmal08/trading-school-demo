@@ -1,0 +1,145 @@
+form {
+  .ts-label {
+    font-family: $graphik;
+    font-size: 1rem;
+    color: $dark-th-color;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    // text-transform: capitalize;
+    .required {
+      margin-top: 4px;
+    }
+  }
+  .input-control {
+    background-color: $dark-input-bg;
+    color: $color-white;
+    border: 1px solid $dark-th-color;
+    border-radius: 8px;
+    font-family: $sofiaProBold;
+    font-size: 1rem;
+    padding: 8px 12px;
+    color-scheme: dark;
+    &:focus {
+      box-shadow: none;
+      outline: none;
+      border: 1px solid $dark-th-color;
+      background-color: $dark-input-bg;
+      color: $color-white;
+    }
+    &::placeholder {
+      color: $dark-th-color;
+    }
+  }
+  .select-control {
+    background-color: $dark-input-bg;
+    color: $color-white;
+    border: 1px solid $dark-th-color;
+    border-radius: 8px;
+    font-family: $sofiaProBold;
+    font-size: 1rem;
+    padding: 8px 12px;
+    &:invalid {
+      color: $dark-th-color;
+    }
+    &:focus {
+      box-shadow: none;
+      outline: none;
+      border: 1px solid $dark-th-color;
+    }
+    option {
+      background-color: $dark-input-bg;
+      color: $color-white;
+      &:first-child {
+        color: $dark-th-color;
+      }
+    }
+  }
+  .ts-checkbox {
+    display: flex;
+    gap: 0.6rem;
+    input[type="checkbox"] {
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 2px;
+      border: 1px solid #d9d9d9;
+    }
+  }
+
+  .registerCheckbox {
+    label {
+      font-family: $roboto-regular;
+      color: $color-white;
+      font-size: 12px;
+      line-height: 18px;
+      display: flex;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+    }
+    input[type="checkbox"] {
+      width: 1rem;
+      height: 1rem;
+      flex-shrink: 0;
+    }
+  }
+
+  .form-model-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.2rem;
+    span {
+      font-family: $graphik;
+      font-size: 1rem;
+      color: $dark-th-color;
+    }
+    h4 {
+      font-family: $sofiaProBold;
+      font-size: 1.2rem;
+      color: $color-white;
+    }
+    p {
+      font-family: $graphik;
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+
+  .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    border: 1px solid #5d6588 !important;
+    display: inline-flex;
+    height: 2rem !important;
+  }
+
+  .select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+    font-family: 'SofiaProBold';
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 3px 17px !important;
+  }
+
+  .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 2px 8px;
+    border-right: 1px solid #5d6588 !important;
+  }
+}
+
+.select2-results__option--selectable {
+  cursor: pointer;
+  color: #fff;
+  font-family: 'SofiaProBold';
+  font-size: 1rem;
+}
+
+.filter-wrapper {
+  width: 75%;
+  .filter-form {
+    input,
+    select {
+      width: 100%;
+    }
+  }
+}
