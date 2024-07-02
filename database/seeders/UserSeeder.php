@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
                 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
                 'account_id_number' => $faker->randomDigit(),
                 'account_name' => $faker->name(),
-                'timezone' => $faker->name(),
+                // 'timezone' => $faker->name(),
                 'email_verified_at' => $faker->dateTimeBetween('-30 days', '+30 days'),
             );
         }
